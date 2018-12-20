@@ -1,0 +1,22 @@
+@charset "UTF-8";
+/*混入*/
+/*组合样式的例子*/
+/*方法混入*/
+/*这些函数 但是不会被变成成css样式*/
+/*传参*/
+/*
+这地方传参就是用传递的参数，没使用就用默认的参数
+*/
+/*动态改变圆角的度数一次性兼顾了所有适配 */
+/*
+这地方传参就是用传递的参数，没使用就用默认的参数
+*/
+.w50_f {
+  width: 50%;
+  float: right;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -o-border-radius: 50px;
+  -ms-border-radius: 50px;
+}

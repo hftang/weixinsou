@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/*嵌套写法*/
+.wjs_app {
+  display: block;
+  img {
+    display: none;
+  }
+
+  /*如果是伪类元素 或者 交集时 连接是没有空隙的 使用 &符来连接*/
+  &:hover {
+    img {
+      display: block;
+      position: absolute;
+      left: 50%;
+
+    }
+  }
+  /*子代选择器可以直接使用*/
+  > div {
+    display: block;
+  }
+}

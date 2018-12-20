@@ -1,0 +1,96 @@
+@charset "UTF-8";
+/*混入*/
+
+/*组合样式的例子*/
+///*
+//.w50 {
+//  width: 50%;
+//}
+//
+//.f_left {
+//  float: left;
+//}
+//
+//.f_right {
+//  float: right;
+//}
+//
+//!*类混入*!
+//
+//!*把上面的两个样式组合成一个新的样式*!
+//.w50-f_left {
+//  .w50();
+//  .f_left();
+//}*/
+
+/*方法混入*/
+
+
+/*这些函数 但是不会被变成成css样式*/
+//.w50() {
+//  width: 50%;
+//}
+//
+//.f_right() {
+//  float: right;
+//}
+//
+//.f_left() {
+//  float: left;
+//}
+//
+///*
+//函数的混入 组成新的样式 会被翻译成css样式
+//
+//*/
+//
+//.w50-f_left {
+//  .w50();
+//  .f_left();
+//}
+
+/*传参*/
+
+.w50(){
+  width: 50%;
+}
+
+/*
+这地方传参就是用传递的参数，没使用就用默认的参数
+*/
+.f(@direction:left){
+  float: @direction;
+}
+
+/*动态改变圆角的度数一次性兼顾了所有适配 */
+.borderRadius(@radius:100px){
+  border-radius: @radius;
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -o-border-radius: @radius;
+  -ms-border-radius: @radius;
+
+}
+
+
+/*
+这地方传参就是用传递的参数，没使用就用默认的参数
+*/
+.w50_f{
+  .w50();
+  .f(right);
+  .borderRadius(50px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

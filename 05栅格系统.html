@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+    <title>微金所</title>
+    <link href="lib/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        .container {
+            height: 100px;
+            background-color: pink;
+        }
+
+        .container > .row {
+            height: 50px;
+            background-color: green;
+
+        }
+
+
+
+        .container > .row > div {
+
+            height: 20px;
+            border: 1px solid #ddd;
+
+        }
+
+    </style>
+
+
+</head>
+<body>
+
+<!--栅格系统实际就是行和列的布局 网格状的布局-->
+<div class="container">
+
+    <!--在bootstrap中表示行-->
+    <div class="row">
+
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+        <div class="col-lg-2 col-md-3 col-sm-4 col-xs-6"></div>
+
+    </div>
+
+
+</div>
+
+
+<script src="lib/jquery/jquery.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
